@@ -1,9 +1,9 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "framework": null,
-  "installCommand": "cd frontend && npm ci --ignore-scripts",
-  "buildCommand": "cd frontend && npm run build && rm -rf dist/exercise-media && mkdir -p dist/exercise-media && cp -R ../catalogue/media/still ../catalogue/media/clip dist/exercise-media/",
-  "outputDirectory": "frontend/dist",
+  "installCommand": "npm ci --ignore-scripts",
+  "buildCommand": "npm run build && rm -rf dist/exercise-media && mkdir -p dist/exercise-media && cp -R ../catalogue/media/still ../catalogue/media/clip dist/exercise-media/",
+  "outputDirectory": "dist",
   "headers": [
     {
       "source": "/(.*)",
